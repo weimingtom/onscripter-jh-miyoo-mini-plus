@@ -13,3 +13,4 @@
 * Button key map
 * 180 degree rotate not so good  
 * How to build under xubuntu  
+* Remove onscripter elf file  
