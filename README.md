@@ -5,7 +5,7 @@
 * Modify Makefile, where are gcc and stage_files  
 * Run 'make clean && make MIYOO=1'  
 
-## ODO, bugs
+## TODO, bugs
 * Joystick not handled
 * How to get gcc toolchain
 * Build libjpeg v9 static lib, currently copy from a30  
