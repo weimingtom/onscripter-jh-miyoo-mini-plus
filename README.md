@@ -12,3 +12,4 @@
 * Effect and windoweffect not shown  
 * Button key map
 * 180 degree rotate not so good  
+* How to build under xubuntu  
