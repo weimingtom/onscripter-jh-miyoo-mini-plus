@@ -5,6 +5,13 @@
 * Modify Makefile, where are gcc and stage_files  
 * Run 'make clean && make MIYOO=1'  
 
+## Cross Compile Toolchains  
+* miyoomini-toolchain.tar.xz  
+(use this, see https://github.com/MiyooMini/union-toolchain/blob/main/support/setup-toolchain.sh)   
+https://github.com/shauninman/miyoomini-toolchain-buildroot/releases/tag/v0.0.3  
+* gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf.tar.gz  
+(don't use this) https://github.com/MiyooMini/miyoo-toolchain/releases/tag/v1.0  
+
 ## TODO, bugs
 * Joystick not handled
 * How to get gcc toolchain
