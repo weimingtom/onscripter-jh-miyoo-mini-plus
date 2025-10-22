@@ -31,4 +31,15 @@ https://github.com/shauninman/miyoomini-toolchain-buildroot/releases/tag/v0.0.3
 miyoo mini flip和miyoo mini plus一样，支持wifi，
 这样有一个好处是可以telnet上去获取shell，
 类似ssh但不是ssh而是telnet登录
+
+实际上通过无线wifi连接miyoo mini plus进行telnet登录的操作，我现在就没用，
+原因是通过这种方式启动SDL1会导致整个程序卡住（我以前在其他机器上也试过，
+需要改SDL1代码才行），所以最后还是通过掌机上那个文件管理器来调试，
+如果需要看输出只能通过sh脚本里面写重定向输出到文件中，执行sh脚本后查看
+
+入手了miyoo mini plus。这个掌机也可以自制软件。工具链在gh上似乎有（没测试），
+虽然它没办法usb上支持adb，不过它支持wifi功能（可能miyoo mini没有，但plus有），
+我试过可以通过显示的IP地址telnet上去操作（古老嵌入式的超级终端或SecureCRT），
+然后通过busybox tftp命令拉取tftpd32.exe下的文件。
+具体待考（framebuffer似乎是上下翻转的）
 ```
