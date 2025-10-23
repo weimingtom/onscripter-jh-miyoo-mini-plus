@@ -43,3 +43,6 @@ miyoo mini flip和miyoo mini plus一样，支持wifi，
 然后通过busybox tftp命令拉取tftpd32.exe下的文件。
 具体待考（framebuffer似乎是上下翻转的）
 ```
+
+## Old build
+* onscripter_20240702.zip, see onscripter-jh_v5_run_machine.tar.gz
