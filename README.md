@@ -23,6 +23,7 @@ https://github.com/shauninman/miyoomini-toolchain-buildroot/releases/tag/v0.0.3
 * Remove onscripter elf file  
 * Keep _ons.sh test shell file
 * Original onscripter.tar.gz  
+* No Key mapping to exit the program
 
 ## How to login to get the shell
 * Connect the wifi, get the IP, and telnet 192.168.1.x Port 23 with PuTTY (NOT SSH on port 22), no passwd
