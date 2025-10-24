@@ -1,0 +1,43 @@
+vtpath = /dev/vc/2, fd = -1
+vtpath = /dev/tty2, fd = 8
+Current VT: 2
+4100492032.000000 FB_VideoInit shadow_fb is 0
+SDL_GetVideoMode 640x480 32 -> 640x480 32
+SDL_CreateShadowSurface 32
+SDL_SetVideoMode publicsurface 0xbdb50, shadowsurface 0xbdb50, videosurface 0xbcb20
+Double buf enabled 0, use SDL_UpdateRect when flip
+Trying format 0x8010
+Requesting 2 fragments of size 1024
+fragments = 2
+fragstotal = 2
+fragsize = 1024
+bytes = 2048
+ *** plugin jpgplgin.dll|jpg is not available, ignored. ***
+ *** failed to open archive arc.sar, ignored.  ***
+ command [cdfadeout] is not supported yet!!
+ command [killmenu] is not supported yet!!
+ command [killmenu] is not supported yet!!
+ *** can't find file [uoncur.bmp] ***
+ *** can't find file [uoffcur.bmp] ***
+SDL_CalculateBlitN blitfun idx is 2, bytesperpixel 4, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+ *** can't find file [cursor1.bmp] ***
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+SDL_CalculateBlitN blitfun idx is 0, bytesperpixel 3, blitfun is 0xb6eeea14, BlitN2N is 0xb6eeea14
+Killed
