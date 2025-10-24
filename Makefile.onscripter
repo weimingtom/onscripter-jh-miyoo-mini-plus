@@ -27,6 +27,52 @@ GUI_OBJS = ONScripter$(OBJSUFFIX) \
 	bzip2-1.0.4_mod/compress$(OBJSUFFIX) \
 	bzip2-1.0.4_mod/decompress$(OBJSUFFIX) \
 	bzip2-1.0.4_mod/bzlib$(OBJSUFFIX) \
+	jpeg-6b_mod/jcapimin$(OBJSUFFIX) \
+	jpeg-6b_mod/jcapistd$(OBJSUFFIX) \
+	jpeg-6b_mod/jccoefct$(OBJSUFFIX) \
+	jpeg-6b_mod/jccolor$(OBJSUFFIX) \
+	jpeg-6b_mod/jcdctmgr$(OBJSUFFIX) \
+	jpeg-6b_mod/jchuff$(OBJSUFFIX) \
+	jpeg-6b_mod/jcinit$(OBJSUFFIX) \
+	jpeg-6b_mod/jcmainct$(OBJSUFFIX) \
+	jpeg-6b_mod/jcmarker$(OBJSUFFIX) \
+	jpeg-6b_mod/jcmaster$(OBJSUFFIX) \
+	jpeg-6b_mod/jcomapi$(OBJSUFFIX) \
+	jpeg-6b_mod/jcparam$(OBJSUFFIX) \
+	jpeg-6b_mod/jcphuff$(OBJSUFFIX) \
+	jpeg-6b_mod/jcprepct$(OBJSUFFIX) \
+	jpeg-6b_mod/jcsample$(OBJSUFFIX) \
+	jpeg-6b_mod/jctrans$(OBJSUFFIX) \
+	jpeg-6b_mod/jdapimin$(OBJSUFFIX) \
+	jpeg-6b_mod/jdapistd$(OBJSUFFIX) \
+	jpeg-6b_mod/jdatadst$(OBJSUFFIX) \
+	jpeg-6b_mod/jdatasrc$(OBJSUFFIX) \
+	jpeg-6b_mod/jdcoefct$(OBJSUFFIX) \
+	jpeg-6b_mod/jdcolor$(OBJSUFFIX) \
+	jpeg-6b_mod/jddctmgr$(OBJSUFFIX) \
+	jpeg-6b_mod/jdhuff$(OBJSUFFIX) \
+	jpeg-6b_mod/jdinput$(OBJSUFFIX) \
+	jpeg-6b_mod/jdmainct$(OBJSUFFIX) \
+	jpeg-6b_mod/jdmarker$(OBJSUFFIX) \
+	jpeg-6b_mod/jdmaster$(OBJSUFFIX) \
+	jpeg-6b_mod/jdmerge$(OBJSUFFIX) \
+	jpeg-6b_mod/jdphuff$(OBJSUFFIX) \
+	jpeg-6b_mod/jdpostct$(OBJSUFFIX) \
+	jpeg-6b_mod/jdsample$(OBJSUFFIX) \
+	jpeg-6b_mod/jdtrans$(OBJSUFFIX) \
+	jpeg-6b_mod/jerror$(OBJSUFFIX) \
+	jpeg-6b_mod/jfdctflt$(OBJSUFFIX) \
+	jpeg-6b_mod/jfdctfst$(OBJSUFFIX) \
+	jpeg-6b_mod/jfdctint$(OBJSUFFIX) \
+	jpeg-6b_mod/jidctflt$(OBJSUFFIX) \
+	jpeg-6b_mod/jidctred$(OBJSUFFIX) \
+	jpeg-6b_mod/jquant1$(OBJSUFFIX) \
+	jpeg-6b_mod/jquant2$(OBJSUFFIX) \
+	jpeg-6b_mod/jutils$(OBJSUFFIX) \
+	jpeg-6b_mod/jmemmgr$(OBJSUFFIX) \
+	jpeg-6b_mod/jmemnobs$(OBJSUFFIX) \
+	jpeg-6b_mod/jidctint$(OBJSUFFIX) \
+	jpeg-6b_mod/jidctfst$(OBJSUFFIX) \
 	AnimationInfo$(OBJSUFFIX) \
 	FontInfo$(OBJSUFFIX) \
 	SDL_ttf-2.0.9_mod/SDL_ttf$(OBJSUFFIX) \
@@ -101,9 +147,12 @@ onscripter$(EXESUFFIX): $(ONSCRIPTER_OBJS)
 
 clean:
 	-$(RM) $(TARGET)
-	-$(RM) *$(OBJSUFFIX) bzip2-1.0.4_mod/*$(OBJSUFFIX) SDL_image-1.2.12_mod/*$(OBJSUFFIX) SDL_ttf-2.0.9_mod/*$(OBJSUFFIX) 
+	-$(RM) *$(OBJSUFFIX) bzip2-1.0.4_mod/*$(OBJSUFFIX) jpeg-6b_mod/*$(OBJSUFFIX) SDL_image-1.2.12_mod/*$(OBJSUFFIX) SDL_ttf-2.0.9_mod/*$(OBJSUFFIX) 
 
 .cpp$(OBJSUFFIX):
+	$(CC) $(CFLAGS) -o $@ $<
+
+%.o:%.c
 	$(CC) $(CFLAGS) -o $@ $<
 
 SarReader$(OBJSUFFIX):    BaseReader.h SarReader.h 

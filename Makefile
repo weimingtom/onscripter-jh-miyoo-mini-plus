@@ -42,20 +42,20 @@ ifeq ($(MIYOO),1)
 SYSROOT?=/home/wmt/work_miyoo_mini/miyoomini-toolchain/arm-linux-gnueabihf/libc
 ARCH=-marm -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard 
 #-march=armv7ve+simd
-DEFS = -DLINUX -DNDEBUG -DMIYOO
+DEFS = -DLINUX -DNDEBUG -DMIYOO -fpermissive
 #-DUSE_SDL_RENDERER  
 #-DMIYOO, search SDL_RenderPresent in ONScripter.cpp, there is a display flush bug for SDL2
-INCS = -Os $(ARCH) -I${SYSROOT}/usr/include -I${SYSROOT}/usr/include/SDL -I${SYSROOT}/usr/include/freetype2 -I./bzip2-1.0.4_mod -ffunction-sections -fdata-sections -Wall -I./libjpeg
+INCS = -Os $(ARCH) -I${SYSROOT}/usr/include -I${SYSROOT}/usr/include/SDL -I${SYSROOT}/usr/include/freetype2 -I./bzip2-1.0.4_mod -ffunction-sections -fdata-sections -Wall -I./jpeg-6b_mod
 
-LIBS = -L./libjpeg -L${SYSROOT}/usr/lib $(ARCH) -lSDL_ttf  -lSDL_mixer -lSDL -lfreetype -ljpeg -lpng -lz -lpthread -lm
+LIBS = -L${SYSROOT}/usr/lib $(ARCH) -lSDL_ttf  -lSDL_mixer -lSDL -lfreetype -lpng -lz -lpthread -lm
 #-lSDL_image
 #removed -lSDL2_image
 #-L${SYSROOT}/usr/lib 
 EXT_FLAGS =
 else
-DEFS = -DLINUX -DMIYOO -g3 -O0 -DFREETYPE_HDR_DIRECTORY
-INCS = -I./SDL_ttf-2.0.9_mod `sdl-config --cflags` -I/usr/include/freetype2
-LIBS = `sdl-config --libs` -lSDL_mixer -lfreetype -lpng -ljpeg -lz -lm
+DEFS = -DLINUX -DMIYOO -g3 -O0 -DFREETYPE_HDR_DIRECTORY -fpermissive
+INCS = -I./SDL_ttf-2.0.9_mod -I./jpeg-6b_mod `sdl-config --cflags` -I/usr/include/freetype2
+LIBS = `sdl-config --libs` -lSDL_mixer -lfreetype -lpng -lz -lm
 #-lbz2 -lSDL_image -lSDL_ttf
 endif
 
