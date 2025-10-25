@@ -44,6 +44,38 @@ miyoo mini flip和miyoo mini plus一样，支持wifi，
 然后通过busybox tftp命令拉取tftpd32.exe下的文件。
 具体待考（framebuffer似乎是上下翻转的）
 ```
+```
+/ # fbset
+
+mode "640x480-75"
+        # D: 31.500 MHz, H: 37.500 kHz, V: 75.000 Hz
+        geometry 640 480 640 960 32
+        timings 31746 120 16 16 1 64 3
+        accel false
+        rgba 8/16,8/8,8/0,8/24
+endmode
+
+/ # uname -a
+Linux (none) 4.9.84 #1136 SMP PREEMPT Wed Jun 28 21:28:40 HKT 2023 armv7l GNU/Linux
+/ # free
+             total         used         free       shared      buffers
+Mem:        103360        55780        47580          112         8536
+-/+ buffers:              47244        56116
+Swap:       131064            0       131064
+/ # df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 1.8M      1.8M         0 100% /
+devtmpfs                 49.0M     80.0K     48.9M   0% /dev
+tmpfs                    49.0M     24.0K     48.9M   0% /tmp
+var                      49.0M      4.0K     49.0M   0% /var
+vendor                   49.0M         0     49.0M   0% /vendor
+mdev                     49.0M     80.0K     48.9M   0% /dev
+/dev/mtdblock5            3.3M      3.3M         0 100% /config
+/dev/mtdblock6            7.4M      7.4M         0 100% /customer
+mtd:appconfigs          832.0K    240.0K    592.0K  29% /appconfigs
+/dev/mmcblk0p1           58.2G     43.9G     14.4G  75% /mnt/SDCARD
+/ #
+```
 
 ## Old build
 * onscripter_20240702.zip, see onscripter-jh_v5_run_machine.tar.gz
