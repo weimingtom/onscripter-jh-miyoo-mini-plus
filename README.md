@@ -13,6 +13,7 @@ https://github.com/shauninman/miyoomini-toolchain-buildroot/releases/tag/v0.0.3
 (don't use this) https://github.com/MiyooMini/miyoo-toolchain/releases/tag/v1.0  
 
 ## TODO, bugs
+* (**FIXME**) link libSDL_ttf-*.so, SDL_ttf actually not builtin  
 * Joystick not handled
 * How to get gcc toolchain
 * Build libjpeg v9 static lib, currently copy from a30  
